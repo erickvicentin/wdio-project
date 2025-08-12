@@ -10,6 +10,8 @@
     "wdio-slack-service": "^2.0.9"
   },
   "scripts": {
-    "wdio": "wdio run ./wdio.conf.js"
+    "wdio": "wdio run ./wdio.conf.js",
+    "report": "allure generate && allure open",
+    "clean": "rm -rf allure-report allure-results logs"
   }
 }
